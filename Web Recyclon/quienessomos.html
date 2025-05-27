@@ -1,0 +1,75 @@
+      <!DOCTYPE html>
+      <html lang="es">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="https://kit.fontawesome.com/5b803ea431.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="estilos-qnsomos.css">
+          <title>¿Quienes Somos?</title>
+      </head>
+      <body>
+          <header>
+              <div class="columna-izq">
+                  <div class="logo-header">
+                    <a href="Inicio.html">
+                      <img src="imgs/recyclon-logo.png" alt="recyclon">
+                  </a>
+                  </div>
+              </div>
+          </header>
+          <main class="quienes-somos">
+                <div class="overlay">
+                  <h2>¿QUIÉNES SOMOS?</h2>
+                  <p class="descripcion">
+                    Somos una empresa comprometida con el medioambiente, especializada en el reciclaje de material de oficina. 
+                    Actuamos con independencia económica y política. 
+                    <br />Nuestro objetivo es fomentar un modelo sostenible, reduciendo el impacto ambiental del consumo en el entorno laboral.
+                  </p>
+                  <p class="accion">
+                    Recyclon utiliza la acción directa no violenta para visibilizar el impacto ambiental del consumo en entornos de oficina e impulsar soluciones sostenibles a través del reciclaje de material corporativo, promoviendo un futuro más verde y responsable.
+                  </p>
+                </div>
+              </main>
+
+              <footer>        <div class="boletin">
+            <h3>Boletín Informativo</h3>
+            <form class="form-suscripcion">
+            <input type="email" placeholder="Tu correo electrónico">
+            <button type="button" id="suscriptor" onclick="mostrarDialogo()">SUSCRÍBETE</button>
+            </form>
+            <dialog id="prueba">
+              <p></p>¡Te has suscrito con éxito!</p>
+              <button onclick="document.getElementById('prueba').close()">Cerrar</button>
+            </dialog>
+            <p>No te pierdas las últimas novedades</p>
+        </div>
+                  <div class="redes-sociales">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="footer-inferior">
+                    <div class="izq">
+                      <a href="#">FAQ</a>
+                      <a href="#">Trabaja con nosotros</a>
+                      <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                    <div class="der">
+                      <p>Recyclon 2025 ©</p>
+                    </div>
+                  </div>
+                </footer>
+          <script>
+          //suscripcion
+            function mostrarDialogo() {
+            const email = document.querySelector('.form-suscripcion input[type="email"]').value;
+            if (email.trim() !== "") {
+              document.getElementById('prueba').showModal();
+            } else {
+              alert("Por favor, introduce tu correo electrónico.");
+            }
+          }
+          </script>
+                
+                
+      </body>
+      </html>

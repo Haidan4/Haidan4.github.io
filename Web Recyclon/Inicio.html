@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b803ea431.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Inicio</title>
+</head>
+<body>
+<header>
+  <div class="logo-header">
+    <a href="Inicio.html">
+      <img src="imgs/recyclon-logo.png" alt="recyclon">
+    </a>
+  </div>
+
+  <div class="header-center" id="menu">
+    <div class="inicio">
+      <a href="Inicio.html">Inicio</a>
+    </div>
+    <div class="catalogo">
+       <a href="catalogo.html">Catálogo</a>
+    </div>
+    <div class="quienes-somos">
+      <a href="quienessomos.html">¿Quiénes Somos?</a>
+    </div>
+  </div>
+
+  <div class="columna-drch">
+    <a href="user.html">
+      <i class="fa-solid fa-user"></i></a>
+    <a href="CestaVacia.html">
+      <i class="fa-solid fa-cart-shopping"></i></a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</header>
+    <main>
+        <div class="slide-main">
+        <i id="flecha" class="fa-solid fa-circle-arrow-left flecha izquierda" onclick="cambiarSlide(-1)"></i>
+
+        <a href="Inicio.html" class="slide activo">
+            <img src="imgs/img1.2.png" alt="Bienvenido">
+        </a>
+        <a href="catalogo.html" class="slide">
+            <img src="imgs/img2.jpg" alt="Top Ventas">
+        </a>
+        <a href="catalogo.html" class="slide">
+            <img src="imgs/img3.jpg" alt="Novedades">
+        </a>
+
+        <h1 class="bienvenida" id="titulo-slide">BIENVENIDO</h1>
+
+        <i id="flecha" class="fa-solid fa-circle-arrow-right flecha derecha" onclick="cambiarSlide(1)"></i>
+        </div>
+    </main>
+    <footer>
+        <div class="boletin">
+            <h3 id="boletin">Boletín Informativo</h3>
+            <form class="form-suscripcion">
+            <input type="email" placeholder="Tu correo electrónico">
+            <button type="button" id="suscriptor" onclick="mostrarDialogo()">SUSCRÍBETE</button>
+            </form>
+            <dialog id="prueba">
+              <p></p>¡Te has suscrito con éxito!</p>
+              <button onclick="document.getElementById('prueba').close()">Cerrar</button>
+            </dialog>
+            <p>No te pierdas las últimas novedades</p>
+        </div>
+        <div class="redes-sociales">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="footer-inferior">
+            <div class="izq">
+                <a href="#">FAQ</a>
+                <a href="#">Trabaja con nosotros</a>
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+            <div class="der">
+                <p>Recyclon 2025 ©</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+
+      const slides = document.querySelectorAll(".slide");
+      const titulos = ["BIENVENIDO", "TOP VENTAS", "NOVEDADES"];
+      const tituloSlide = document.getElementById("titulo-slide");
+
+      let indice = 0;
+
+      function cambiarSlide(direccion) {
+          slides[indice].classList.remove("activo");
+          indice = (indice + direccion + slides.length) % slides.length;
+          slides[indice].classList.add("activo");
+          tituloSlide.textContent = titulos[indice];
+      }
+      //suscripcion
+      function mostrarDialogo() {
+      const email = document.querySelector('.form-suscripcion input[type="email"]').value;
+      if (email.trim() !== "") {
+        document.getElementById('prueba').showModal();
+      } else {
+        alert("Por favor, introduce tu correo electrónico.");
+      }
+    }
+    </script>
+</body>
+</html>

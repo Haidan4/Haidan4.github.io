@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="all" href="cesta.css" />
+		<title>RECYCLON</title>
+	</head>
+	<body>
+		<div id="encabezado">
+			<a href="Inicio.html">
+			<img src="imgs/recyclon-logo.png"  /></a>
+			<div id="user">
+				<a href="user.html">
+					<img src="imgs/user.png" /></a>
+				<a href="CestaVacia.html">
+					<img src="imgs/carro.png" /></a>
+			</div>
+		</div>
+		
+		<div id="tarjetaTotal">
+			<div id="imgVerde"> <img src="imgs/fondo.jpg"/> </div>
+			<div id="infPago">
+				<h3>Información de Pago</h3>
+				<div >
+					  Nombre del Titular 
+					 
+				</div>
+				<div style="display: flex; align-items: center; gap: 8px;">
+					<input type="text" name="nombre" /> 
+					<button id="show" onclick="document.getElementById('prueba').showModal()">?</button>
+				</div>
+				<div>
+					Número de la Tarjeta
+				</div>
+				<div>
+					<input type="text" name="num" /> 
+					
+				</div>
+				<div class="FC">
+				  <div class="campo">
+					<label for="fecha">Fecha de Caducidad</label>
+					<input type="text" name="fecha" id="fecha" />
+				  </div>
+				  <div class="campo">
+					<label for="cvc">CSV</label>
+					<input type="text" name="CVC" id="cvc" />
+				  </div>
+				</div>
+
+				<div>
+					Email
+				</div>
+				<div>
+					<input type="text" name="email" /> 
+				</div>
+				
+			</div>
+			
+			<div id="infPago2">
+				<div id="ww">
+					<div>
+						RESUMEN DE LA COMPRA
+						<div>
+							<div class="imp">
+								TOTAL
+							</div>
+							<div class="imp">
+								2,50€
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="txt">
+					¡ATENCIÓN! Si eres suscriptor, disfrutarás de acceso exclusivo a nuevas ofertas y un 20% de descuento en tus próximas compras. 
+				</div>
+				
+			</div>
+			<div id="PS" >
+				<div class="btn">
+						<a href="FinPago.html">PAGAR</a>
+					</div>
+					
+				<div class="btn">
+						<a href="Inicio.html#boletin">SUSCRIBETE</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		<div id="fotter">
+		<img src="imgs/face.png" /><img src="imgs/ins.png" />
+			<div id="info">
+			FAQ
+			Trabaja con nosotros 
+			</div>
+			
+		</div>
+		<dialog id="prueba">
+	  <h2>TARJETA DE CREDITO</h2>
+	  <img src="imgs/Tarjeta.png" alt="Tarjeta" />
+	  <button onclick="document.getElementById('prueba').close()">Cerrar</button>
+	</dialog>
+	
+	</body>
+</html>

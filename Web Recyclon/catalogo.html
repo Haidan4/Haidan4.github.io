@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo Recyclon</title>
+  <link rel="stylesheet" href="catalogo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Checkbox para controlar el menú móvil (oculto) -->
+  <input type="checkbox" id="menu-toggle">
+  
+  <div class="panel-lateral">
+    <div class="logo"></div>
+    <a href="inicio.html" class="cerrar"><i class="fas fa-times"></i></a>
+    <div class="carrito">
+    <a href="CestaVacia.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <div class="usuario">
+    <a href="user.html"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </div>
+
+  <!-- Botón de menú móvil (label que controla el checkbox) -->
+  <label for="menu-toggle" class="menu-toggle-label">
+    <i class="fas fa-bars"></i>
+  </label>
+
+  <div class="menu-principal">
+    <h2>Catálogo</h2>
+    <ul class="lista-categorias">
+      <!-- Categoría 1 -->
+      <li class="categoria">
+        <input type="checkbox" id="categoria-1" class="category-checkbox">
+        <label for="categoria-1" class="elemento-categoria">
+          &nbsp;&nbsp;Escritura y Papelería
+          <span class="flecha">&nbsp;&nbsp;▶&nbsp;&nbsp;</span>
+        </label>
+        <ul class="lista-productos">
+          <li class="producto">
+            <div class="opcion-producto"><a href="prod.html">
+              &nbsp;Post-it de Colores <span class="precio">3.00€&nbsp;</span>
+            </a></div>
+          </li>
+          <li class="producto">
+            <div class="opcion-producto">
+              &nbsp;Lápices Staedtler <span class="precio">2.50€&nbsp;</span>
+            </div>
+          </li>
+          <li class="producto">
+            <div class="opcion-producto">
+              &nbsp;Subrayadores <span class="precio">1.80€&nbsp;</span>
+            </div>
+          </li>
+          <li class="producto">
+            <div class="opcion-producto">
+              &nbsp;Folios de Colores <span class="precio">4.20€&nbsp;</span>
+            </div>
+          </li>
+          <li class="producto">
+            <div class="opcion-producto">
+              &nbsp;Bolígrafos <span class="precio">1.50€&nbsp;</span>
+            </div>
+          </li>
+        </ul>
+      </li>
+      
+      <!-- Categoría 2 -->
+      <li class="categoria">
+        <input type="checkbox" id="categoria-2" class="category-checkbox">
+        <label for="categoria-2" class="elemento-categoria">
+          &nbsp;&nbsp;Archivo y Orden
+          <span class="flecha">&nbsp;&nbsp;▶&nbsp;&nbsp;</span>
+        </label>
+        <ul class="lista-productos">
+          <li class="producto">
+            <div class="opcion-producto">
+              &nbsp;Carpetas <span class="precio">5.00€&nbsp;</span>
+            </div>
+          </li>
+          <li class="producto">
+            <div class="opcion-producto">
+              &nbsp;Archivadores <span class="precio">7.50€&nbsp;</span>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="fondo"></div>
+</body>
+</html>

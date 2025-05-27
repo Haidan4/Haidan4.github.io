@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="all" href="cesta.css" />
+		<title>RECYCLON</title>
+	</head>
+	<body>
+		<div id="encabezado">
+			<a href="Inicio.html">
+			<img src="imgs/recyclon-logo.png"  /></a>
+			<div id="user">
+				<a href="user.html">
+					<img src="imgs/user.png" /></a>
+				<a href="CestaVacia.html">
+					<img src="imgs/carro.png" /></a>
+			</div>
+		</div>
+		
+		<div id="totalP">
+		
+		<div id="tipo">
+			<form action="envio" method="get" >
+				<div class="verde">
+					TIPO DE ENVIO
+				</div>
+					<p>
+						<input type="radio" 
+							name="type" 
+							value="Normal" />Normal
+						<br/>
+						<input type="radio" 
+							name="type" 
+							value="Express" />Express
+					</p>
+
+				<div class="verde">
+					METODOS DE PAGO
+				</div>
+				<img class="tarjeta" src="imgs/mastercard.png"/>
+				<img class="tarjeta" src="imgs/visa.png"/>
+				<img class="tarjeta" src="imgs/paypal.png"/>
+				<img id="bizum"src="imgs/bizum.png"/>
+			</form>
+		</div>
+		
+		<div id="resumen">
+			<div class="verde">
+					CONTINUAR A MODOS DE PAGO
+			</div>
+			<p>CESTA RESUMEN</p>
+			<div id="cesta">
+				<h4>TIPO ENVIO = NORMAL</h4>
+				
+				<div id="ss">
+					<div class="descripcion">
+						<span class="producto">Post-it de colores</span><br/>
+						<div class="descripcion">Post-it adhesivos de<br> diferentes colores.</div>
+					</div>
+					<div class="precio">2,50€</div>
+				</div>
+				<div id="linea">
+					<div class="descripcion">Gastos de envío</div>
+					<div class="precio" id="pre">0,00€</div>
+				</div>
+				<div id="ss">
+					<div id="tot">TOTAL</div>
+					<div class="precio" id="pro">2,50€</div>
+				</div>
+			</div>
+		
+						
+		</div>
+		<div id="PS" >
+				<div class="btn">
+						<a href="Cesta.html">VOLVER</a>
+					</div>
+					
+				<div class="btn">
+						<a href="Tarjeta.html">CONTINUAR</a>
+				</div>
+		
+		</div>
+		</div>
+		<div id="fotter">
+		<img src="imgs/face.png" /><img src="imgs/ins.png" />
+			<div id="info">
+			FAQ
+			Trabaja con nosotros 
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

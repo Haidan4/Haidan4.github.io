@@ -1,0 +1,103 @@
+
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('imgs/group.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .contenedor-login {
+      background-color: rgba(255, 255, 255, 0.85);
+      max-width: 400px;
+      margin: 10px auto auto auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .contenedor-login h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .contenedor-login p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="password"],
+    .formulario input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .formulario label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .formulario .acciones {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .formulario .acciones input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .formulario .acciones a {
+      color: #337ab7;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .formulario .acciones a:hover {
+      text-decoration: underline;
+    }
+
+    .formulario button {
+      width: 100%;
+      background-color: #6dbf4b;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background-color: #58a63a;
+    }
+
+    .registro {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .registro a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .registro a:hover {
+      text-decoration: underline;
+    }
+
+    .logo-header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+    }
